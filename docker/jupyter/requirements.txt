@@ -1,0 +1,11 @@
+pandas==1.5.2
+numpy==1.23.5
+matplotlib==3.6.2
+tensorflow==2.11.0
+imbalanced-learn==0.9.1
+feature-engine==1.5.2
+pysftp==0.2.9
+sweetviz==2.1.4
+pandas-profiling==3.5.0
+plotly-express==0.4.1
+xgboost==1.7.1
