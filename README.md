@@ -22,5 +22,8 @@ The following four infrastructure services are used. These services can be start
 ### Adding new dependencies for JupyterLab
 * Add new dependencies to file [docker/jupyter/requirements.txt](docker/jupyter/requirements.txt)
 
+## Troubleshooting
+* On Linux systems there may be permission problems with the Artifact Store. The current workaround is to set the permissions manually (sudo chmod -R 777). 
+
 ## Useful Tools
 * SFTP-Server: [Cyberduck](https://cyberduck.io)
