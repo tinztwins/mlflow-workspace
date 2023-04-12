@@ -1,12 +1,7 @@
 ### jupyter image ###
-# note: environment variables are located in .env
-ARG JUPYTER_SCIPY_IMAGE
-ARG JUPYTER_SCIPY_VERSION
-FROM jupyter/${JUPYTER_SCIPY_IMAGE}:${JUPYTER_SCIPY_VERSION}
+FROM jupyter/scipy-notebook:python-3.9
 
-ARG MLFLOW_VERSION
-
-# set environment variables
+# set variables
 ENV HOME_DIR=/home/$NB_USER
 ENV WORK_DIR=$HOME_DIR/work
 
@@ -28,13 +23,14 @@ RUN ldconfig && \
     jupyter nbextension enable toc2/main --sys-prefix && \
     jupyter nbextension enable collapsible_headings/main --sys-prefix
 
-# install python dependencies from requirements.txt - add new requirements to requirements.txt
-#USER $NB_USER
 RUN mkdir -p ~/.ssh && chmod 700 ~/.ssh
 
 WORKDIR $WORK_DIR
+
+# install python dependencies from requirements.txt - add new requirements to requirements.txt
 COPY ./requirements.txt ./
 RUN pip install --upgrade pip && \
-    pip install mlflow==$MLFLOW_VERSION && \
     pip install -r ./requirements.txt && \
     fix-permissions $HOME_DIR
+
+EXPOSE 8888
