@@ -1,23 +1,26 @@
-# mlflow-workspace
-This repo is part of the blog post ["How to setup an MLflow 2.0 Workspace with Docker?"](https://tinztwins.medium.com/how-to-setup-an-mlflow-2-0-workspace-with-docker-7e4938b695e5) on medium.com. 
+# MLflow Workspace
+
+## Support us
+<a href="https://www.buymeacoffee.com/tinztwins" target="_blank"><img src="https://bitbucket.org/tinztwins/materials/raw/9c7e16f90082b88ed52164fab06f0dbed18c8c86/yellow_bmc.png" alt="Buy Me A Coffee" style="height: 41px !important; width: 174px !important;" ></a>
 
 ## General
-The [MLflow](https://mlflow.org/docs/latest/index.html) environment serves as a tracking server for the ML model parameters and for versioning the ML models. This project ueses MLflow version 2.0.1.
+The [MLflow](https://mlflow.org/docs/latest/index.html) environment serves as a tracking server for managing the machine learning lifecycle. The repo contains several infrastructure services that start in a Docker stack. 
 
 ## Infrastructure services
-The following four infrastructure services are used. These services can be started manually so that you get an MLflow working environment in docker.
+The Docker stack uses four infrastructure services. These services can be started manually so that you get an MLflow working environment in Docker.
 * JupyterLab (docker-container: jupyter)
 * MLflow Tracking Server (docker-container: mlflow)
 * Artifact Store as SFTP Server (docker-container: sftp)
 * Backend Storage as postgres db (docker-container: postgres)
 
 ### Start and stop the MLflow workspace
-1. Run the script in the folder [/keys/generate_keys.sh](/keys/generate_keys.sh): `sh generate_keys.sh`
-2. Start MLflow workspace: `docker-compose up --build`
-3. Execute the following script (copies the known_hosts from mlflow to jupyter): `sh copy_known_hosts_docker.sh`
-4. Visit http://0.0.0.0:5000 for MLflow UI
-5. Visit http://0.0.0.0:8888 for JupyterLab UI (enter the token in the terminal for login)
-6. Stop MLflow workspace: `docker-compose down`
+1. Start MLflow workspace: `sh start_docker_stack.sh`
+2. Visit [http://127.0.0.1:5001](http://127.0.0.1:5001) for MLflow UI
+3. Visit [http://127.0.0.1:8888](http://127.0.0.1:8888) for JupyterLab UI (enter the password `mlflow`)
+4. Stop MLflow workspace: `sh stop_docker_stack.sh`
+
+### Test your MLflow workspace setup
+* Visit the JupyterLab ([http://127.0.0.1:8888](http://127.0.0.1:8888)) and execute the notebook [mlflow_example.ipynb](notebooks/mlflow_example.ipynb). If no error appears, then your MLflow workspace is set up correctly.
 
 ### Adding new dependencies for JupyterLab
 * Add new dependencies to file [docker/jupyter/requirements.txt](docker/jupyter/requirements.txt)
@@ -27,3 +30,6 @@ The following four infrastructure services are used. These services can be start
 
 ## Useful Tools
 * SFTP-Server: [Cyberduck](https://cyberduck.io)
+
+## References
+* [How to setup an MLflow 2.0 Workspace with Docker?](https://medium.com/dev-genius/how-to-setup-an-mlflow-2-0-workspace-with-docker-7e4938b695e5) / Dec 4, 2022
