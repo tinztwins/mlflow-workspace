@@ -10,3 +10,4 @@ pandas-profiling==3.5.0
 plotly-express==0.4.1
 xgboost==1.7.1
 mlflow==2.2.2
+kaleido
