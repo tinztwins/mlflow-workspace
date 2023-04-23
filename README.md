@@ -1,5 +1,8 @@
 # MLflow Workspace
 
+## Magic AI Newsletter
+👉🏽 Join our free [Magic AI newsletter](https://tinztwins.gumroad.com/subscribe) for the latest AI updates!
+
 ## Support us
 <a href="https://www.buymeacoffee.com/tinztwins" target="_blank"><img src="https://bitbucket.org/tinztwins/materials/raw/9c7e16f90082b88ed52164fab06f0dbed18c8c86/yellow_bmc.png" alt="Buy Me A Coffee" style="height: 41px !important; width: 174px !important;" ></a>
 
@@ -32,4 +35,5 @@ The Docker stack uses four infrastructure services. These services can be starte
 * SFTP-Server: [Cyberduck](https://cyberduck.io)
 
 ## References
-* [How to setup an MLflow 2.0 Workspace with Docker?](https://medium.com/dev-genius/how-to-setup-an-mlflow-2-0-workspace-with-docker-7e4938b695e5) / Dec 4, 2022
+* [Deploy Your Own MLflow Workspace On-Premise with Docker](https://medium.com/towards-data-science/deploy-your-own-mlflow-workspace-on-premise-with-docker-b54294676f0b) in Towards Data Science / April 17, 2023
+* [How to setup an MLflow 2.0 Workspace with Docker?](https://medium.com/dev-genius/how-to-setup-an-mlflow-2-0-workspace-with-docker-7e4938b695e5) in Dev Genius / Dec 4, 2022
