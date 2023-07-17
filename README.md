@@ -28,6 +28,9 @@ The Docker stack uses four infrastructure services. These services can be starte
 ### Adding new dependencies for JupyterLab
 * Add new dependencies to file [docker/jupyter/requirements.txt](docker/jupyter/requirements.txt)
 
+## Apple silicon or arm64 architecture
+* Please open the .env file and change the variable `SFTP_IMAGE` to `tinztwins/sftp-server:arm64`.
+
 ## Troubleshooting
 * On Linux systems there may be permission problems with the Artifact Store. The current workaround is to set the permissions manually (sudo chmod -R 777). 
 
