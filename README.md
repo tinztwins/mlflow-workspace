@@ -1,7 +1,8 @@
 # MLflow Workspace
 
-## Magic AI Newsletter
-👉🏽 Join our free [Magic AI newsletter](https://tinztwins.gumroad.com/l/magic-ai-newsletter) for the latest AI updates!
+## Newsletter
+👉🏽 Join our free [Magic AI newsletter](https://magicai.tinztwins.de) for the latest AI updates!
+👉🏽 You should also check out our FREE articles on [Tinz Twins Hub](https://hub.tinztwins.de).
 
 ## Support us
 <a href="https://www.buymeacoffee.com/tinztwins" target="_blank"><img src="https://bitbucket.org/tinztwins/materials/raw/9c7e16f90082b88ed52164fab06f0dbed18c8c86/yellow_bmc.png" alt="Buy Me A Coffee" style="height: 41px !important; width: 174px !important;" ></a>
