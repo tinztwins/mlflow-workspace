@@ -1,7 +1,7 @@
 # MLflow Workspace
 
 ## Newsletter
-👉🏽 Join our free [Magic AI newsletter](https://magicai.tinztwins.de) for the latest AI updates!
+👉🏽 Join our free [Magic AI newsletter](https://magicai.tinztwins.de) for the latest AI updates!          
 👉🏽 You should also check out our FREE articles on [Tinz Twins Hub](https://hub.tinztwins.de).
 
 ## Support us
