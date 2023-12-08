@@ -10,7 +10,7 @@ ENV WORK_DIR=$HOME_DIR/work
 ## tqdm: progress bar for python
 ## jupyter_contrib_nbextensions: contains a collection of community-contributed unofficial extensions
 RUN conda install --quiet --yes \
-        'psycopg2==2.9.3' \
+        'psycopg2==2.9.9' \
         'conda-build==3.23.1' \
         'tqdm==4.64.1' \
         'jupyter_contrib_nbextensions==0.5.1' \

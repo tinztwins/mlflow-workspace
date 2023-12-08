@@ -1,5 +1,5 @@
 ### postgres image ###
-FROM postgres:latest
+FROM postgres:15.5-bullseye
 
 COPY init.sql /docker-entrypoint-initdb.d/
 

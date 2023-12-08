@@ -1,3 +1,3 @@
-psycopg2==2.9.6
+psycopg2==2.9.9
 pysftp==0.2.9
-mlflow==2.2.2
+mlflow==2.9.1
