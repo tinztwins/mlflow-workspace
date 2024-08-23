@@ -1,11 +1,7 @@
 # MLflow Workspace
 
-## Newsletter
-👉🏽 Join our free [Magic AI newsletter](https://magicai.tinztwins.de) for the latest AI updates!          
-👉🏽 You should also check out our FREE articles on [Tinz Twins Hub](https://hub.tinztwins.de).
-
-## Support us
-<a href="https://www.buymeacoffee.com/tinztwins" target="_blank"><img src="https://bitbucket.org/tinztwins/materials/raw/9c7e16f90082b88ed52164fab06f0dbed18c8c86/yellow_bmc.png" alt="Buy Me A Coffee" style="height: 41px !important; width: 174px !important;" ></a>
+## Newsletter 
+👉🏽 Do you enjoy our content and want to read super-detailed articles about AI? If so, subscribe to our [Tinz Twins Hub](https://hub.tinztwins.de/newsletter) and get our popular data science cheat sheets for FREE.
 
 ## General
 The [MLflow](https://mlflow.org/docs/latest/index.html) environment serves as a tracking server for managing the machine learning lifecycle. The repo contains several infrastructure services that start in a Docker stack. 
