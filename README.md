@@ -1,7 +1,7 @@
 # MLflow Workspace
 
 ## Newsletter 
-👉🏽 Do you enjoy our content and want to read super-detailed articles about AI? If so, subscribe to our [Tinz Twins Hub](https://hub.tinztwins.de/newsletter) and get our popular data science cheat sheets for FREE.
+👉🏽 Do you enjoy our content and want to read super-detailed articles about AI? If so, subscribe to our [Tinz Twins Hub](https://tinztwinshub.com/blog) and get our popular data science cheat sheets for FREE.
 
 ## General
 The [MLflow](https://mlflow.org/docs/latest/index.html) environment serves as a tracking server for managing the machine learning lifecycle. The repo contains several infrastructure services that start in a Docker stack. 
